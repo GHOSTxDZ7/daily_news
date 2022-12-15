@@ -23,7 +23,7 @@ export default class App extends Component {
       />
         <Navbar/>
       <Routes>
-            <Route exact path="/" element={<News apikey={this.apikey} setProgress={this.setProgress} key="general" pageSize={9} country="in" category="general"/>}/>
+            <Route exact path="/daily_news" element={<News apikey={this.apikey} setProgress={this.setProgress} key="general" pageSize={9} country="in" category="general"/>}/>
             <Route exact path="/sports" element={<News apikey={this.apikey} setProgress={this.setProgress} key="sports" pageSize={9} country="in" category="sports"/>}/>
             <Route exact path="/technology" element={<News apikey={this.apikey} setProgress={this.setProgress} key="technology" pageSize={9} country="in" category="technology"/>}/>
             <Route exact path="/entertainment" element={<News apikey={this.apikey} setProgress={this.setProgress} key="entertainment" pageSize={9} country="in" category="entertainment"/>}/>
